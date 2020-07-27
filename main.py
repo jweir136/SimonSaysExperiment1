@@ -5,4 +5,4 @@ import os
 
 ########### IMPORT THE CUSTOM REQUIREMENTS #############
 
-print(os.listdir("storage/projects"))
+print(os.listdir("/storage/projects"))
