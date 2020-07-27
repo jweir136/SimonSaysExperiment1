@@ -110,7 +110,7 @@ class OpenPose:
             return x
 
         ########################### Create and load the model #########################
-        weights_path = "/storage/SimonSays/utils/openpose/model.h5" # orginal weights converted from caffe
+        weights_path = "/storage/projects/SimonSays/utils/openpose/model.h5" # orginal weights converted from caffe
         #weights_path = "training/weights.best.h5" # weights tarined from scratch
 
         input_shape = (None,None,3)
