@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 import matplotlib
 import numpy as np
 from scipy.ndimage.filters import gaussian_filter
-from utils.openpose.config_reader import config_reader
-import utils.openpose.util
+from config_reader import config_reader
+import util
 
 class OpenPose:
     #   Create the model and save it as a class field.
@@ -110,7 +110,7 @@ class OpenPose:
             return x
 
         ########################### Create and load the model #########################
-        weights_path = "utils/openpose/model.h5" # orginal weights converted from caffe
+        weights_path = "/storage/SimonSays/utils/openpose/model.h5" # orginal weights converted from caffe
         #weights_path = "training/weights.best.h5" # weights tarined from scratch
 
         input_shape = (None,None,3)
