@@ -6,6 +6,8 @@ import os
 ########### IMPORT THE CUSTOM REQUIREMENTS #############
 from OpenPose import OpenPose
 
+pose =  OpenPose()
+
 if __name__ == "__main__":
   img = cv2.imread("ski.jpg")
-  OpenPose.keypoints(img)
+  pose.keypoints(img)
