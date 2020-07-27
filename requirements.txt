@@ -1,7 +1,5 @@
-tensorflow
 keras
 opencv-python
 matplotlib
 configobj
 IPython
-tqdm
