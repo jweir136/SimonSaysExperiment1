@@ -4,3 +4,8 @@ import cv2
 import os
 
 ########### IMPORT THE CUSTOM REQUIREMENTS #############
+from OpenPose import OpenPose
+
+if __name__ == "__main__":
+  img = cv2.imread("ski.jpg")
+  OpenPose.keypoints(img)
