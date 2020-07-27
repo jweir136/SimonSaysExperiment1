@@ -156,7 +156,7 @@ class OpenPose:
         for m in range(len(multiplier)):
             scale = multiplier[m]
             imageToTest = cv2.resize(img, (0,0), fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
-            imageToTest_padded, pad = utils.openpose.util.padRightDownCorner(imageToTest, model_params['stride'], model_params['padValue'])
+            imageToTest_padded, pad = util.padRightDownCorner(imageToTest, model_params['stride'], model_params['padValue'])
 
             input_img = np.transpose(np.float32(imageToTest_padded[:,:,:,np.newaxis]), (3,0,1,2)) # required shape (1, width, height, channels)
 
