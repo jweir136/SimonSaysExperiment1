@@ -5,4 +5,6 @@ import os
 
 ########### IMPORT THE CUSTOM REQUIREMENTS #############
 
-print(os.listdir("/storage/projects"))
+from storage.projects.SimonSays.utils.openpose import OpenPose
+from storage.projects.SimonSays.utils.video_utils import *
+print(os.listdir("/storage/projects/SimonSays/utils/video_utils"))
