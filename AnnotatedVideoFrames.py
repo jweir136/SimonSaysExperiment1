@@ -1,5 +1,5 @@
 import cv2
-from utils.openpose.OpenPose import OpenPose
+from OpenPose import OpenPose
 
 class AnnotatedVideoFrames:
     def __init__(self):
